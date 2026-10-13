@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #0f0f1a;
+  color: #fff;
+}
+.wrap { max-width: 1000px; margin: auto; padding: 16px; }
+.center { text-align: center; padding: 20px; }
+header { text-align: center; }
+h1 { margin-bottom: 4px; }
+h2 { font-weight: 500; color: #ffb400; margin-top: 0; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+.card {
+  background: #1c1c2e;
+  border: 3px solid transparent;
+  border-radius: 14px;
+  padding: 12px;
+  cursor: pointer;
+  text-align: center;
+}
+.card.selected { border-color: #ffb400; }
+.card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.bar {
+  background: #333;
+  border-radius: 8px;
+  height: 22px;
+  position: relative;
+  overflow: hidden;
+}
+.bar div { background: #ffb400; height: 100%; }
+.bar span { position: absolute; inset: 0; font-size: 13px; line-height: 22px; }
+.vote-btn {
+  display: block;
+  margin: auto;
+  padding: 14px 48px;
+  font-size: 18px;
+  border: 0;
+  border-radius: 30px;
+  background: #ffb400;
+  font-weight: 700;
+  cursor: pointer;
+}
+.vote-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+footer { text-align: center; font-size: 12px; opacity: 0.6; margin-top: 30px; }
